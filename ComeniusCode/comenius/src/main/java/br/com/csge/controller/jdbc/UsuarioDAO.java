@@ -1,7 +1,7 @@
 package br.com.csge.controller.jdbc;
 
 import java.sql.*;
-import java.util.*;
+
 
 import br.com.csge.model.Usuario;
 
@@ -29,6 +29,11 @@ public class UsuarioDAO {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public void create(Usuario u) {
+		// TODO Auto-generated method stub
+		
 	}
 
 

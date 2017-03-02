@@ -11,21 +11,23 @@ import javax.servlet.http.HttpSession;
 import br.com.csge.controller.jdbc.UsuarioDAO;
 import br.com.csge.model.Usuario;
 
+@SuppressWarnings("serial")
 @WebServlet("/login")
 public class LoginController extends HttpServlet {
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		HttpSession sessao = request.getSession(false);
 		if(sessao != null){
 			sessao.invalidate();
 		}
-		response.sendRedirect("login.html");
+		response.sendRedirect("login.jsp");
 		//LOGOUT
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		// 1)capturando dados da tela
 		String email = request.getParameter("inputEmail");
 		String senha = request.getParameter("inputPassword");
