@@ -37,10 +37,10 @@ public class FiltroPermissao implements Filter {
 		
 		
 		
-		if((sessao!=null) ||(uri.lastIndexOf("login.jsp")!=-1) || (uri.lastIndexOf("/login")!=-1)){
+		if((sessao!=null) ||(uri.lastIndexOf("login.html")!=-1) || (uri.lastIndexOf("/login")!=-1)){
 			chain.doFilter(request, response);
 		}else{
-			httpResponse.sendRedirect("login.jsp");
+			httpResponse.sendRedirect("login.html");
 		}
 		
 		

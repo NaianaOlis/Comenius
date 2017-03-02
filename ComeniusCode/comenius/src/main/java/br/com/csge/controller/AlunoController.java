@@ -1,6 +1,7 @@
 package br.com.csge.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -9,8 +10,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.csge.controller.jdbc.UsuarioDAO;
+import br.com.csge.model.Usuario;
 
-@SuppressWarnings("serial")
+
 @WebServlet("/alunoCtrl")
 public class AlunoController extends HttpServlet {
 	
