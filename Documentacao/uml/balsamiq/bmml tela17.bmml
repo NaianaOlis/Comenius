@@ -1,0 +1,168 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="934" measuredH="829" mockupW="804" mockupH="797">
+  <controls>
+    <control controlID="967" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="130" y="32" w="804" h="797" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10667209</color>
+        <text>A%20Web%20Page%0Ahttp%3A//www.comenius.com.br/cadastroaluno</text>
+      </controlProperties>
+    </control>
+    <control controlID="972" controlTypeID="com.balsamiq.mockups::Title" x="295" y="136" w="-1" h="-1" measuredW="211" measuredH="35" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Escola%20Podium</text>
+      </controlProperties>
+    </control>
+    <control controlID="973" controlTypeID="com.balsamiq.mockups::SubTitle" x="246" y="183" w="-1" h="-1" measuredW="318" measuredH="17" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Educa%E7%E3o%20Infantil%20e%20Ensino%20Fundamental%20S/S%20Ltda.</text>
+      </controlProperties>
+    </control>
+    <control controlID="974" controlTypeID="com.balsamiq.mockups::Label" x="839" y="121" w="-1" h="-1" measuredW="62" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ol%E1%20Fulano</text>
+      </controlProperties>
+    </control>
+    <control controlID="975" controlTypeID="com.balsamiq.mockups::Link" x="876" y="142" w="-1" h="-1" measuredW="25" measuredH="19" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sair</text>
+      </controlProperties>
+    </control>
+    <control controlID="976" controlTypeID="com.balsamiq.mockups::Title" x="291" y="236" w="-1" h="-1" measuredW="347" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>24</size>
+        <text>Registro%20de%20Classe%20-%20Avalia%E7%E3o</text>
+      </controlProperties>
+    </control>
+    <control controlID="977" controlTypeID="com.balsamiq.mockups::Menu" x="145" y="261" w="116" h="-1" measuredW="150" measuredH="182" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Atividades%20%3E%0A---%0ARegistro%20de%20%0AClasse%20%3E%0A---%0AEmentas%20%3E%0A---%0ATurmas%20%3E%0A---%0APlanejamento%20%3E%0A---%0ADiretrizes%20%3E</text>
+      </controlProperties>
+    </control>
+    <control controlID="978" controlTypeID="com.balsamiq.mockups::Label" x="291" y="277" w="-1" h="-1" measuredW="40" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Turma%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="1038" controlTypeID="com.balsamiq.mockups::Button" x="295" y="608" w="163" h="46" measuredW="112" measuredH="32" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <color>472931</color>
+        <menuIcon>false</menuIcon>
+        <size>24</size>
+        <text>Imprimir</text>
+      </controlProperties>
+    </control>
+    <control controlID="1039" controlTypeID="com.balsamiq.mockups::Title" x="254" y="759" w="-1" h="-1" measuredW="63" measuredH="17" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Comenius</text>
+      </controlProperties>
+    </control>
+    <control controlID="1040" controlTypeID="com.balsamiq.mockups::SubTitle" x="330" y="760" w="158" h="-1" measuredW="150" measuredH="15" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <italic>true</italic>
+        <size>12</size>
+        <text>Sistema%20de%20Gest%E3o%20Escolar</text>
+      </controlProperties>
+    </control>
+    <control controlID="1048" controlTypeID="com.balsamiq.mockups::Image" x="132" y="108" w="116" h="113" measuredW="287" measuredH="291" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <src>../../images/logopodium.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="1049" controlTypeID="com.balsamiq.mockups::Image" x="192" y="730" w="61" h="64" measuredW="926" measuredH="960" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../images/logoComenius.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="1065" controlTypeID="com.balsamiq.mockups::DataGrid" x="289" y="397" w="539" h="196" measuredW="441" measuredH="197" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <hasHeader>true</hasHeader>
+        <rowHeight>16</rowHeight>
+        <text>N%BA%20%5Ev%2C%20Nome%20%5E%2C%20Data%20de%20%5CrNascimento%2C%20Nota%0A1%2C%20BEATRIZ%20LEITE%20RODRIGUES%20DA%20SILVA%2C%2015/12/2004%2C%20%20%20%20%20%20%20%20%20%20%20%0A2%2C%20BIANCA%20SCHLICHTING%20LEITE%2C%2012/10/2005%2C%0A3%2C%20CLAUDIO%20VINICIUS%20DA%20SILVA%20MARTINS%2C%2006/08/2003%2C%0A4%2C%20DEIVID%20GABRIEL%20LEGATIS%20DA%20LUZ%2C%2003/02/2005%2C%0A5%2C%20ELLEN%20CRISTINA%20MATHIAS%20DE%20JESUS%2C%2031/01/2004%2C%0A6%2C%20GABRIEL%20HENRIQUE%20NUNES%2C%2029/03/2004%2C%0A7%2C%20GABRIEL%20REZENDE%2C%2025/07/2004%2C%0A8%2C%20GUSTAVO%20DA%20SILVA%20DOS%20SANTOS%2C%2001/03/2003%2C%0A9%2C%20GUSTAVO%20FERREIRA%20DE%20ANDRADE%20SILVA%2C%2027/10/2004%2C%0A10%2C%20GUSTAVO%20HENRIQUE%20LEAL%20LEONARDI%2C%2019/02/2002%2C</text>
+        <value>0</value>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="1066" controlTypeID="com.balsamiq.mockups::ComboBox" x="334" y="275" w="-1" h="-1" measuredW="92" measuredH="24" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3%BA%20Ano%20-%20A</text>
+      </controlProperties>
+    </control>
+    <control controlID="1067" controlTypeID="com.balsamiq.mockups::Label" x="459" y="277" w="-1" h="-1" measuredW="59" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Disciplina%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="1068" controlTypeID="com.balsamiq.mockups::ComboBox" x="529" y="275" w="-1" h="-1" measuredW="143" measuredH="24" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>L%EDngua%20Portuguesa</text>
+      </controlProperties>
+    </control>
+    <control controlID="1069" controlTypeID="com.balsamiq.mockups::Label" x="289" y="318" w="-1" h="-1" measuredW="27" measuredH="21" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>M%EAs%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="1070" controlTypeID="com.balsamiq.mockups::ComboBox" x="332" y="316" w="94" h="-1" measuredW="58" measuredH="24" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Maio</text>
+      </controlProperties>
+    </control>
+    <control controlID="1071" controlTypeID="com.balsamiq.mockups::Label" x="708" y="318" w="-1" h="-1" measuredW="120" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Per%EDodo%20Letivo%3A%202016</text>
+      </controlProperties>
+    </control>
+    <control controlID="1077" controlTypeID="com.balsamiq.mockups::Button" x="731" y="654" w="163" h="46" measuredW="123" measuredH="32" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <color>472931</color>
+        <menuIcon>false</menuIcon>
+        <size>24</size>
+        <text>Registrar</text>
+      </controlProperties>
+    </control>
+    <control controlID="1078" controlTypeID="com.balsamiq.mockups::Label" x="289" y="361" w="-1" h="-1" measuredW="106" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Data%20da%20Avalia%E7%E3o%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="1081" controlTypeID="com.balsamiq.mockups::TextInput" x="622" y="358" w="206" h="-1" measuredW="79" measuredH="26" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="1082" controlTypeID="com.balsamiq.mockups::DateChooser" x="399" y="359" w="150" h="-1" measuredW="121" measuredH="25" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%20%20%20%20%20/%20%20%20%20%20%20/%20%20%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="1083" controlTypeID="com.balsamiq.mockups::Label" x="564" y="361" w="-1" h="-1" measuredW="51" measuredH="21" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Assunto%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="1085" controlTypeID="com.balsamiq.mockups::ComboBox" x="712" y="275" w="116" h="-1" measuredW="97" measuredH="24" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>1%BA%20Bimestre</text>
+      </controlProperties>
+    </control>
+    <control controlID="1086" controlTypeID="com.balsamiq.mockups::TextInput" x="493" y="315" w="80" h="-1" measuredW="79" measuredH="26" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="1087" controlTypeID="com.balsamiq.mockups::Label" x="457" y="318" w="-1" h="-1" measuredW="32" measuredH="21" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Valor%3A</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

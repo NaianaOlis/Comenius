@@ -1,0 +1,108 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="786" measuredH="855" mockupW="656" mockupH="823">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="130" y="32" w="656" h="823" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10667209</color>
+        <text>A%20Web%20Page%0Ahttp%3A//www.comenius.com.br/cadastroaluno</text>
+      </controlProperties>
+    </control>
+    <control controlID="400" controlTypeID="com.balsamiq.mockups::Title" x="346" y="133" w="-1" h="-1" measuredW="211" measuredH="35" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Escola%20Podium</text>
+      </controlProperties>
+    </control>
+    <control controlID="401" controlTypeID="com.balsamiq.mockups::SubTitle" x="297" y="180" w="-1" h="-1" measuredW="318" measuredH="17" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Educa%E7%E3o%20Infantil%20e%20Ensino%20Fundamental%20S/S%20Ltda.</text>
+      </controlProperties>
+    </control>
+    <control controlID="402" controlTypeID="com.balsamiq.mockups::Label" x="683" y="133" w="-1" h="-1" measuredW="62" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ol%E1%20Fulano</text>
+      </controlProperties>
+    </control>
+    <control controlID="403" controlTypeID="com.balsamiq.mockups::Link" x="720" y="154" w="-1" h="-1" measuredW="25" measuredH="19" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sair</text>
+      </controlProperties>
+    </control>
+    <control controlID="469" controlTypeID="com.balsamiq.mockups::Title" x="260" y="767" w="63" h="-1" measuredW="63" measuredH="17" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Comenius</text>
+      </controlProperties>
+    </control>
+    <control controlID="470" controlTypeID="com.balsamiq.mockups::SubTitle" x="285" y="784" w="158" h="-1" measuredW="150" measuredH="15" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <italic>true</italic>
+        <size>12</size>
+        <text>Sistema%20de%20Gest%E3o%20Escolar</text>
+      </controlProperties>
+    </control>
+    <control controlID="478" controlTypeID="com.balsamiq.mockups::Image" x="156" y="109" w="116" h="113" measuredW="287" measuredH="291" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <src>../../images/logopodium.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="479" controlTypeID="com.balsamiq.mockups::Image" x="182" y="750" w="61" h="64" measuredW="926" measuredH="960" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../images/logoComenius.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="486" controlTypeID="com.balsamiq.mockups::Image" x="398" y="205" w="307" h="312" measuredW="776" measuredH="804" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../images/logoComeniusMarcaDAgua.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="487" controlTypeID="com.balsamiq.mockups::Menu" x="156" y="230" w="150" h="-1" measuredW="150" measuredH="213" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%7Bcolor%3A%230000FF%7DFuncionamento%7Bcolor%7D%20%3E%0A---%0A%7Bcolor%3A%23FF0000%7DAluno%7Bcolor%7D%20%3E%0A---%0A%7Bcolor%3A%2300b000%7DMatr%EDcula%7Bcolor%7D%20%3E%0A---%0A%7Bcolor%3A%23ff00ff%7DMensalidade%7Bcolor%7D%20%3E%0A---%0A%7Bcolor%3A%2300b0b0%7DRegistro%20de%20Classe%7Bcolor%7D%20%3E%0A---%0A%7Bcolor%3A%23ff8a00%7DFuncion%E1rio%7Bcolor%7D%20%3E%0A---%0A%7Bcolor%3A%237f0000%7DRelat%F3rio%7Bcolor%7D%20%3E%0A---%0A%7Bcolor%3A%23000000%7DDocumentos%7Bcolor%7D%20%3E</text>
+      </controlProperties>
+    </control>
+    <control controlID="488" controlTypeID="com.balsamiq.mockups::Menu" x="306" y="391" w="117" h="-1" measuredW="150" measuredH="135" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%7Bcolor%3A%23FF0000%7DCadastrar%7Bcolor%7D%0A---%0A%7Bcolor%3A%23FF0000%7DAlterar/Excluir%7Bcolor%7D%0A---%0A%7Bcolor%3A%23FF0000%7DPesquisar%7Bcolor%7D%0A---%0A%7Bcolor%3A%23FF0000%7DFicha%20de%20Sa%FAde%7Bcolor%7D%0A---%0A%7Bcolor%3A%23FF0000%7DRecado%7Bcolor%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="489" controlTypeID="com.balsamiq.mockups::Menu" x="306" y="230" w="203" h="-1" measuredW="150" measuredH="161" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%7Bcolor%3A%230000FF%7DVisualizar%20Calend%E1rio%20Escolar%7Bcolor%7D%0A---%0A%7Bcolor%3A%230000FF%7DVisualizar%20Matriz%20Curricular%7Bcolor%7D%0A---%0A%7Bcolor%3A%230000FF%7DFechar%20Bimestre%7Bcolor%7D%0A---%0A%7Bcolor%3A%230000FF%7DAbrir%20Per%EDodo%20Letivo%7Bcolor%7D%0A---%0A%7Bcolor%3A%230000FF%7DFechar%20Per%EDodo%20Letivo%7Bcolor%7D%0A---%0A%7Bcolor%3A%230000FF%7DAbrir%20Turma%7Bcolor%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="490" controlTypeID="com.balsamiq.mockups::Menu" x="306" y="526" w="137" h="-1" measuredW="150" measuredH="109" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%7Bcolor%3A%2300b000%7DIncluir%7Bcolor%7D%0A---%0A%7Bcolor%3A%2300b000%7DAlterar/Excluir%7Bcolor%7D%0A---%0A%7Bcolor%3A%2300b000%7DSem%20Frequ%EAncia%7Bcolor%7D%0A---%0A%7Bcolor%3A%2300b000%7DMovimenta%E7%E3o%7Bcolor%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="491" controlTypeID="com.balsamiq.mockups::Menu" x="306" y="635" w="137" h="-1" measuredW="150" measuredH="83" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%7Bcolor%3A%23ff00ff%7DBoleto%7Bcolor%7D%0A---%0A%7Bcolor%3A%23ff00ff%7DLan%E7ar%20Pagamento%7Bcolor%7D%0A---%0A%7Bcolor%3A%23ff00ff%7DVer%20Pend%EAncias%7Bcolor%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="493" controlTypeID="com.balsamiq.mockups::Menu" x="545" y="237" w="162" h="-1" measuredW="150" measuredH="57" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%7Bcolor%3A%2300b0b0%7DVisualizar%20Frequ%EAncia%7Bcolor%7D%20%0A---%0A%7Bcolor%3A%2300b0b0%7DVisualizar%20Avalia%E7%E3o%7Bcolor%7D%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="494" controlTypeID="com.balsamiq.mockups::Menu" x="546" y="294" w="157" h="-1" measuredW="150" measuredH="57" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%7Bcolor%3A%23ff8a00%7DVisualizar%20Cadastro%7Bcolor%7D%0A---%0A%7Bcolor%3A%23ff8a00%7DGerar%20Contracheque%7Bcolor%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="495" controlTypeID="com.balsamiq.mockups::Menu" x="543" y="351" w="206" h="-1" measuredW="150" measuredH="109" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%7Bcolor%3A%237f0000%7DMapa%20de%20Avalia%E7%E3o%7Bcolor%7D%0A---%0A%7Bcolor%3A%237f0000%7DPercentual%20de%20Frequ%EAncia%7Bcolor%7D%0A---%0A%7Bcolor%3A%237f0000%7DImprimir%20Registro%20de%20Classe%7Bcolor%7D%0A---%0A%7Bcolor%3A%237f0000%7DRelat%F3rio%20de%20Pagamentos%7Bcolor%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="496" controlTypeID="com.balsamiq.mockups::Menu" x="545" y="458" w="212" h="-1" measuredW="150" measuredH="187" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%7Bcolor%3A%23000000%7DFicha%20de%20Matr%EDcula%7Bcolor%7D%0A---%0A%7Bcolor%3A%23000000%7DFicha%20de%20Sa%FAde%7Bcolor%7D%0A---%0A%7Bcolor%3A%23000000%7DDeclara%E7%E3o%20de%20Matr%EDcula%7Bcolor%7D%0A---%0A%7Bcolor%3A%23000000%7DDeclara%E7%E3o%20de%20Transfer%EAncia%7Bcolor%7D%0A---%0A%7Bcolor%3A%23000000%7DFicha%20Individual%7Bcolor%7D%0A---%0A%7Bcolor%3A%23000000%7DBoletim%7Bcolor%7D%0A---%0A%7Bcolor%3A%23000000%7DHist%F3rico%20Escolar%7Bcolor%7D</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

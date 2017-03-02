@@ -1,0 +1,33 @@
+﻿*************************criar projeto*************************
+mvn archetype:generate -DgroupId=br.com.csge -DartifactId=comenius -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+*************************configurar maven para compilar versão 8 do java*************************
+...</dependencies>
+	<build>
+		<finalName>comenius</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>  
+
+*************************problema na linha <packaging>war</packaging>*************************  
+...<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-war-plugin</artifactId>
+			<version>2.6</version>
+			<configuration>
+				<failOnMissingWebXml>false</failOnMissingWebXml>
+  			</configuration> 
+  		</plugin>
+		
+		
+		
+		
+		
