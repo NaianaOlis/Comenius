@@ -25,6 +25,51 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+
+<script type="text/javascript">	
+		
+		$(document).ready(function () {
+		
+			$.getJSON('https://gist.githubusercontent.com/ografael/2037135/raw/5d31e7baaddd0d599b64c3ec04827fc244333447/estados_cidades.json', function (data) {
+				var items = [];
+				var options = '<option value="">escolha um estado</option>';	
+				$.each(data, function (key, val) {
+					options += '<option value="' + val.nome + '">' + val.nome + '</option>';
+				});					
+				$("#estados").html(options);				
+				
+				$("#estados").change(function () {				
+				
+					var options_cidades = '';
+					var str = "";					
+					
+					$("#estados option:selected").each(function () {
+						str += $(this).text();
+					});
+					
+					$.each(data, function (key, val) {
+						if(val.nome == str) {							
+							$.each(val.cidades, function (key_city, val_city) {
+								options_cidades += '<option value="' + val_city + '">' + val_city + '</option>';
+							});							
+						}
+					});
+					$("#cidades").html(options_cidades);
+					
+				}).change();		
+			
+			});
+		
+		});
+		
+	</script>		
+
+
+
+
+
+
+
 	</head>
 	<body>
 		<header class="topo">
@@ -92,7 +137,7 @@
 						<br>
 						<br>
 				
-						<div class="form-group">
+						<div class="form-group">					
 							<label class="col-md-2 control-label" for="uf">Estado: </label>
 							
 							<sql:query var="qryEstados" dataSource="${ds}">
@@ -134,6 +179,32 @@
 	<!--Documentação-->
 					<div class="col-md-12">
 						<h3>Documentação</h3>
+						
+						
+						<div class="form-group">
+								
+						<label class="col-md-2 control-label" for="estados">Exxxxxxxx:</label>  
+							<div class="col-md-3">
+								<select id="estados" class="form-control">
+									<option value="xxxx"></option>
+									<option value="xxxx"></option>
+								</select>							
+							</div>
+						
+						<label class="col-md-2 control-label" for="cidades">Cxxxxxxxx:</label>  
+							<div class="col-md-3">
+								<select id="cidades" class="form-control"></select>								
+							</div>
+							
+		
+						</div>
+						
+						
+						
+						
+						
+						
+						
 						<br>
 						<br>
 						
