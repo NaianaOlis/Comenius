@@ -1,4 +1,4 @@
-<%@page import="br.com.csge.model.Usuario" %>
+i<%@page import="br.com.csge.model.Usuario" %>
 <%@ page language="java" 
 	contentType="text/html; charset=UTF-8"  
 	pageEncoding="UTF-8"%>
@@ -24,52 +24,6 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
-
-<script type="text/javascript">	
-		
-		$(document).ready(function () {
-		
-			$.getJSON('https://gist.githubusercontent.com/ografael/2037135/raw/5d31e7baaddd0d599b64c3ec04827fc244333447/estados_cidades.json', function (data) {
-				var items = [];
-				var options = '<option value="">escolha um estado</option>';	
-				$.each(data, function (key, val) {
-					options += '<option value="' + val.nome + '">' + val.nome + '</option>';
-				});					
-				$("#estados").html(options);				
-				
-				$("#estados").change(function () {				
-				
-					var options_cidades = '';
-					var str = "";					
-					
-					$("#estados option:selected").each(function () {
-						str += $(this).text();
-					});
-					
-					$.each(data, function (key, val) {
-						if(val.nome == str) {							
-							$.each(val.cidades, function (key_city, val_city) {
-								options_cidades += '<option value="' + val_city + '">' + val_city + '</option>';
-							});							
-						}
-					});
-					$("#cidades").html(options_cidades);
-					
-				}).change();		
-			
-			});
-		
-		});
-		
-	</script>		
-
-
-
-
-
-
-
 	</head>
 	<body>
 		<header class="topo">
@@ -81,27 +35,20 @@
 			<div class="page-header">
 				<center><h1>Cadastro de Aluno</h1></center>
 			</div>
-
 			<form role="form">
 <!--Step 1--> 
 			<div class="row setup-content" id="step-1">
 				<div class="col-xs-12">		
-
 <!--Dados Pessoais-->				
 					<div class="col-md-12">
-						<h3>Dados Pessoais</h3>
-						<br>
-						<br>
-
+						<h3>Dados Pessoais</h3> <br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="nome_completo">Nome Completo:</label>  
 							<div class="col-md-6">
 								<input id="nome_completo" name="nome_completo" type="text" placeholder="Digite o nome do aluno" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="sexo">Sexo: </label>
 							<div class="col-md-3">
@@ -118,9 +65,7 @@
 								<input id="data_nasc" name="data_nasc" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="cgm">C.G.M: </label>
 							<div class="col-md-3">
@@ -134,84 +79,36 @@
 								<input id="nacionalidade" name="nacionalidade" type="text" placeholder="Digite a nacionalidade" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
-						<div class="form-group">					
-							<label class="col-md-2 control-label" for="uf">Estado: </label>
-							
-							<sql:query var="qryEstados" dataSource="${ds}">
-    							select * from uf order by nome
-    						</sql:query>
-    						
-							<div class="col-md-3">
-								<select name="uf" id="uf" class="form-control">
-    								<c:forEach var="estado" items="${qryEstados.rows}">
-    								<option >${estado.sigla}</option>
-    								</c:forEach>
+						<br><br>
+						<div class="form-group">													
+							<label class="col-md-2 control-label" for="uf">Estado: </label>						
+							<div class="col-md-3">							
+								<select name="uf" id="uf" onchange="changeUf(0)" class="form-control" >
+    								<option></option>
     							</select>
-							
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>										
 							<label class="col-md-2 control-label" for="cidade">Cidade: </label>
-							<div class="col-md-3">
+							<div class="col-md-3">							
 								<select id="cidade" name="cidade" class="form-control">
-									<option value="1"></option>
-									<option value="2"></option>
+									<option></option>								
 								</select>
-							</div>
-						</div>
-						<br>
-						<br>
-				
+							</div>							
+						</div>						
+						<br><br>				
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="escola_anterior">Escola Anterior:</label>  
 							<div class="col-md-6">
 								<input id="escola_anterior" name="escola_anterior" type="text" placeholder="Digite o nome da escola anterior caso houver" class="form-control input-md">
 							</div>
-						</div>
-						<br>
-						<br>
+						</div>						
+						<br><br>
 						<div class="separador"></div>
 					</div>
-	<!--Documentação-->
+<!--Documentação-->
 					<div class="col-md-12">
-						<h3>Documentação</h3>
-						
-						
-						<div class="form-group">
-								
-						<label class="col-md-2 control-label" for="estados">Exxxxxxxx:</label>  
-							<div class="col-md-3">
-								<select id="estados" class="form-control">
-									<option value="xxxx"></option>
-									<option value="xxxx"></option>
-								</select>							
-							</div>
-						
-						<label class="col-md-2 control-label" for="cidades">Cxxxxxxxx:</label>  
-							<div class="col-md-3">
-								<select id="cidades" class="form-control"></select>								
-							</div>
-							
-		
-						</div>
-						
-						
-						
-						
-						
-						
-						
-						<br>
-						<br>
-						
-						<h5>Certidão de Nascimento</h5>
-						<br>
-						<br>
-
+						<h3>Documentação</h3><br><br>						
+						<h5>Certidão de Nascimento</h5><br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="n_cert">Número:</label>  
 							<div class="col-md-4">
@@ -226,39 +123,30 @@
 								<input id="livro" name="livro" type="text" placeholder="Digite o livro" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="cartorio">Cartório: </label>
 							<div class="col-md-5">
 								<input id="cartorio" name="cartorio" type="text" placeholder="Digite o nome do cartorio" class="form-control input-md">
-							</div>
-							
+							</div>							
 							<label class="col-md-2 control-label" for="ems_cert">Data de Emissão: </label>
 							<div class="col-md-3">
 								<input id="ems_cert" name="ems_cert" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="uf_cert">UF: </label>
 							<div class="col-md-3">
-								<select id="uf_cert" name="uf_cert" class="form-control">
-									<option value="1"></option>
-									<option value="2"></option>
+								<select id="uf_cert" name="uf_cert" onchange="changeUf(1)" class="form-control">
+									<option></option>									
 								</select>
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>					
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="cidade_cert">Cidade: </label>
 							<div class="col-md-3">
 								<select id="cidade_cert" name="cidade_cert" class="form-control">
-									<option value="1"></option>
-									<option value="2"></option>
+									<option></option>
 								</select>
 							</div>
 						</div>
@@ -299,8 +187,7 @@
 							<label class="col-md-2 control-label" for="uf_rg_aluno">UF: </label>
 							<div class="col-md-3">
 								<select id="uf_rg_aluno" name="uf_rg_aluno" class="form-control">
-									<option value="1"></option>
-									<option value="2"></option>
+									<option></option>
 								</select>
 							</div>
 						</div>
@@ -322,7 +209,7 @@
 						
 						<div class="separador"></div>
 					</div>	
-	<!--Endereço-->
+<!--Endereço-->
 					<div class="col-md-12">
 						<h3>Endereço</h3>
 						<br>
@@ -370,10 +257,8 @@
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="uf_res_aluno">UF: </label>
 							<div class="col-md-3">
-								<select id="uf_res_aluno" name="uf_res_aluno" class="form-control">
-    								<c:forEach var="estado" items="${qryEstados.rows}">
-    								<option >${estado.sigla}</option>
-    								</c:forEach>
+								<select id="uf_res_aluno" name="uf_res_aluno" onchange="changeUf(2)" class="form-control">    								
+    								<option ></option>    								
     							</select>
 								
 							</div>
@@ -383,8 +268,7 @@
 							<label class="col-md-2 control-label" for="cidade_res_aluno">Cidade: </label>
 							<div class="col-md-3">
 								<select id="cidade_res_aluno" name="cidade_res_aluno" class="form-control">
-									<option value="1"></option>
-									<option value="2"></option>
+									<option></option>
 								</select>
 							</div>
 						</div>
@@ -392,16 +276,12 @@
 						<br>
 						
 					</div>
-																									
-						<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Próximo</button>
-			
+					<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Próximo</button>
 				</div>		
 			</div>
-
 <!--Step 2--> 		
 			<div class="row setup-content" id="step-2">
 				<div class="col-xs-12">
-
 <!--Dados Mãe-->				
 					<div class="col-md-12">
 						<h3>Dados da Mãe</h3>
@@ -976,8 +856,7 @@
 				</div>
 			</div>
 
-<!-- Contrato -->
-				
+<!-- Contrato -->				
 			<div class="row setup-content" id="step-3">
 				<div class="col-xs-12">
 					<div class="col-md-12">
@@ -1067,9 +946,7 @@
 					</div>
 					
 				</div>
-			</div>
-				
-				
+			</div>		
 <!--Finalizar-->
 				<div class="row setup-content" id="step-4">
 					<div class="col-xs-12">
@@ -1099,8 +976,7 @@
 						<p>Conferir e enviar</p>
 					</div>
 				</div>
-			</div>
-	
+			</div>	
 		</div>
 	</div>
 </div>	
@@ -1113,5 +989,84 @@
 	<script src="js/wizzard.js"></script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/funcoes.js"></script>
+<!-- ************************************************************************************************************************ -->																
+							<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+							<script>
+							//Ao abrir janela chama função comboUf
+								window.onload = function () {
+						        	comboUf();
+						    	}					
+								//campos 0=uf 1=uf_cert 2=uf_res_aluno 
+								function changeUf(campo) {
+									$.getJSON('http://www.geonames.org/childrenJSON?geonameId=3469034', function(data) {			        	
+										var indice, campoSelecao;	
+										//de acordo com o campo 0, 1 ou 2
+										//guarda a opção que está selecionada
+										//campo a ser modificado ao chamar a função comboCidade
+										if (campo == 0){
+											indice = uf.selectedIndex;
+											var campoSelecao = "cidade";											
+										}else if(campo == 1){
+											indice = uf_cert.selectedIndex;
+											var campoSelecao = "cidade_cert";
+										}else{
+											indice = uf_res_aluno.selectedIndex;
+											var campoSelecao = "cidade_res_aluno";
+										}										
+										//codigo da uf selecionada de acordo com o json
+										var cod = data.geonames[indice].geonameId;
+										comboCidade(cod, campoSelecao);										
+									});	 
+								}					
+								//popula o select de acordo com o json								
+								function comboUf(){
+									$.getJSON('http://www.geonames.org/childrenJSON?geonameId=3469034', function(data) {						        						        		
+										//cada select recebe uma nomeação 
+										var output="<select>";
+										var outputCert="<select>";
+										var outputRg="<select>";
+										var outputEnd="<select>";										
+						        		for (var i in data.geonames) {
+						        			//pega dados do json do primeiro (i) até o último item
+						        		    output+="<option>" + data.geonames[i].name;		
+						        		    outputCert+="<option>" + data.geonames[i].name;
+						        		    outputRg+="<option>" + data.geonames[i].name;
+						        		    outputEnd+="<option>" + data.geonames[i].name;
+						        		}
+						        		output+="</select>";
+						        		outputCert+="</select>";
+						        		outputRg+="</select>";
+						        		outputEnd+="</select>";
+						        		//escreve no option
+						        		document.getElementById("uf").innerHTML=output;	
+						        		document.getElementById("uf_cert").innerHTML=output;	
+						        		document.getElementById("uf_rg_aluno").innerHTML=output;	
+						        		document.getElementById("uf_res_aluno").innerHTML=output;						        				
+						        		//todos menos o campo da uf do rg passam um número para a função
+						        		//changeUf() que vê qual dos select foi modificado e chama a função para 
+						        		//popular o select de cidade do select correspondente de acordo
+						        		//com a atual seleção. campos 0=uf 1=uf_cert 2=uf_res_aluno 
+						        		for(var i=0; i<3; i++){
+						        			changeUf(i);
+						        		}						        							        		
+						        	});	
+								}
+								//coloca o codigo da uf selecionada na url json para listar cidades daquela uf					
+								function comboCidade(cod, campo){								
+									$.getJSON('http://www.geonames.org/childrenJSON?geonameId='+cod, function(data) {
+							  			var output="<select>";
+							        	for (var i in data.geonames) {
+							        		//pega o nome de todas as cidades 
+							        	    output+="<option>" + data.geonames[i].name;						        	    
+							        	}
+							        	output+="</select>";			
+							        	//popula o select de acordo com a referência passada: campo
+							        	document.getElementById(campo).innerHTML=output;	
+							        	//campo: nome do campo - select. relacionado ao campos uf que foi
+										//modificado o valor
+							 	 	});		
+								}								
+							</script>							
+<!-- ************************************************************************************************************************ -->
 	</body>
 </html>
