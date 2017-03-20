@@ -41,7 +41,7 @@
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aluno <span class="caret"></span></a>
 									<ul class="dropdown-menu">
-										<li><a href="alunoCtrl?acao=cadastrar">Cadastrar</a></li>
+										<li><a href="AlunoCtrl?acao=cadastrar">Cadastrar</a></li>
 										<li><a href="#">Alterar/Excluir</a></li>
 										<li><a href="#">Pesquisar</a></li>
 										<li><a href="#">Ficha de Saúde</a></li>

@@ -1,9 +1,10 @@
-package br.com.csge.controller.jdbc;
+package br.com.csge.dao;
 
 import java.sql.*;
 import java.util.*;
 
 import br.com.csge.model.Usuario;
+import br.com.csge.util.ConnectionFactory;
 
 public class UsuarioDAO {
 	private Connection con = ConnectionFactory.getConnection();	

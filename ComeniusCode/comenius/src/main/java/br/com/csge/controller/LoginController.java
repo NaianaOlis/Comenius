@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import br.com.csge.controller.jdbc.UsuarioDAO;
+import br.com.csge.dao.UsuarioDAO;
 import br.com.csge.model.Usuario;
 
 @WebServlet("/login")
@@ -23,7 +23,7 @@ public class LoginController extends HttpServlet {
 		if(sessao != null){
 			sessao.invalidate();
 		}
-		response.sendRedirect("login.html");
+		response.sendRedirect("login.jsp");
 		//LOGOUT
 	}
 
@@ -78,7 +78,7 @@ public class LoginController extends HttpServlet {
 			request.getRequestDispatcher("WEB-INF/indexTecAdm.jsp").forward(request, response);
 		}else{
 			System.out.println("senha incorreta");
-			response.sendRedirect("login.html");
+			response.sendRedirect("login.jsp");
 		}
 
 	}

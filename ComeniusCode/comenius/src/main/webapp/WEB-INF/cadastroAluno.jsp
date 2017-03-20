@@ -35,7 +35,7 @@ i<%@page import="br.com.csge.model.Usuario" %>
 			<div class="page-header">
 				<center><h1>Cadastro de Aluno</h1></center>
 			</div>
-			<form role="form">
+			<form role="form" action="AlunoCtrl?acao=add" method="post">
 <!--Step 1--> 
 			<div class="row setup-content" id="step-1">
 				<div class="col-xs-12">		
@@ -79,20 +79,16 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								<input id="nacionalidade" name="nacionalidade" type="text" placeholder="Digite a nacionalidade" class="form-control input-md">
 							</div>
 						</div>
-						<br><br>
-						<div class="form-group">
-							<h3>Naturalidade:</h3>	
-						</div>
-						<br><br>
+						<br><br>						
 						<div class="form-group">																		
-							<label class="col-md-2 control-label" for="uf">Estado: </label>						
+							<label class="col-md-2 control-label" for="uf">Naturalidade - UF: </label>						
 							<div class="col-md-3">							
 								<select name="uf" id="uf" onchange="changeUf(0)" class="form-control" >
     								<option></option>
     							</select>
 							</div>							
 							<div class="col-md-2"></div>										
-							<label class="col-md-2 control-label" for="cidade">Cidade: </label>
+							<label class="col-md-2 control-label" for="cidade">Naturalidade - Cidade: </label>
 							<div class="col-md-3">							
 								<select id="cidade" name="cidade" class="form-control">
 									<option></option>								
@@ -154,13 +150,9 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								</select>
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<h5>RG</h5>
-						<br>
-						<br>
-
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="n_rg_aluno">Número:</label>  
 							<div class="col-md-3">
@@ -174,9 +166,7 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								<input id="ems_rg_aluno" name="ems_rg_aluno" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="org_ems_aluno">Orgão Emissor: </label>
 							<div class="col-md-3">
@@ -184,10 +174,8 @@ i<%@page import="br.com.csge.model.Usuario" %>
 									<option value="1"></option>
 									<option value="2"></option>
 								</select>
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>					
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="uf_rg_aluno">UF: </label>
 							<div class="col-md-3">
 								<select id="uf_rg_aluno" name="uf_rg_aluno" class="form-control">
@@ -195,39 +183,29 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								</select>
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<h5>CPF</h5>
-						<br>
-						<br>
-
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="n_cpf_aluno">Número:</label>  
 							<div class="col-md-3">
 								<input id="n_cpf_aluno" name="n_cpf_aluno" type="text" placeholder="Digite o numero do rg" class="form-control input-md">
 							</div>
 						</div>	
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="separador"></div>
 					</div>	
 <!--Endereço-->
 					<div class="col-md-12">
 						<h3>Endereço</h3>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="cep_aluno">CEP:</label>  
 							<div class="col-md-3">
 								<input id="cep_aluno" name="cep_aluno" type="text" placeholder="Digite o cep" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="rua_aluno">Rua: </label>
 							<div class="col-md-5">
@@ -289,18 +267,14 @@ i<%@page import="br.com.csge.model.Usuario" %>
 <!--Dados Mãe-->				
 					<div class="col-md-12">
 						<h3>Dados da Mãe</h3>
-						<br>
-						<br>
-
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="nome_mae">Nome Completo:</label>  
 							<div class="col-md-6">
 								<input id="nome_mae" name="nome_mae" type="text" placeholder="Digite o nome da mâe" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="data_nasc_mae">Data de Nascimento: </label>
 							<div class="col-md-3">
@@ -314,9 +288,7 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								<input id="nac_mae" name="nac_mae" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
+						<br><br>				
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="n_rg_mae">RG:</label>  
 							<div class="col-md-3">
@@ -330,9 +302,7 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								<input id="ems_rg_mae" name="ems_rg_mae" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="org_ems_mae">Orgão Emissor: </label>
 							<div class="col-md-3">
@@ -352,17 +322,14 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								</select>
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="n_cpf_mae">CPF:</label>  
 							<div class="col-md-3">
 								<input id="n_cpf_mae" name="n_cpf_mae" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>	
-						<br>
-						<br>
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="escol_mae">Escolaridade: </label>
 							<div class="col-md-6">
@@ -372,153 +339,115 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								</select>
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="prof_mae">Profissão: </label>
 							<div class="col-md-3">
 								<input id="prof_mae" name="prof_mae" type="text" placeholder="" class="form-control input-md">
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>					
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="empresa_mae">Empresa: </label>
 							<div class="col-md-3">
 								<input id="empresa_mae" name="empresa_mae" type="text" placeholder="Empresa em que trabalha" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
-						<br>
+						<br><br><br>
 						<h5>TELEFONES</h5>
-						<br>
-												
+						<br>												
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="tel_com_mae">Comercial: </label>
 							<div class="col-md-3">
 								<input id="tel_com_mae" name="tel_com_mae" type="text" placeholder="" class="form-control input-md">
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>					
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="ramal_com_mae">Ramal: </label>
 							<div class="col-md-3">
 								<input id="ramal_com_mae" name="ramal_com_mae" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="tel_res_mae">Residencial: </label>
 							<div class="col-md-3">
 								<input id="tel_res_mae" name="tel_res_mae" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="cel1_mae">Celular 1: </label>
 							<div class="col-md-3">
 								<input id="cel1'_mae" name="cel1_mae" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="cel2_mae">Celular 2: </label>
 							<div class="col-md-3">
 								<input id="cel2'_mae" name="cel2_mae" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="rec1_mae">Recado 1: </label>
 							<div class="col-md-3">
 								<input id="rec1'_mae" name="rec1_mae" type="text" placeholder="" class="form-control input-md">
-							</div>
-							
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="cont_rec1_mae">Falar com: </label>
 							<div class="col-md-3">
 								<input id="cont_rec1_mae" name="cont_rec1_mae" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="rec2_mae">Recado 2: </label>
 							<div class="col-md-3">
 								<input id="rec2'_mae" name="rec2_mae" type="text" placeholder="" class="form-control input-md">
-							</div>
-							
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="cont_rec2_mae">Falar com: </label>
 							<div class="col-md-3">
 								<input id="cont_rec2_mae" name="cont_rec2_mae" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="separador"></div>
 					</div>
 <!--Dados Pai-->
 					<div class="col-md-12">
 						<h3>Dados do Pai</h3>
-						<br>
-						<br>
-
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="nome_pai">Nome Completo:</label>  
 							<div class="col-md-6">
 								<input id="nome_pai" name="nome_pai" type="text" placeholder="Digite o nome do pai" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
+						<br><br>				
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="data_nasc_pai">Data de Nascimento: </label>
 							<div class="col-md-3">
 								<input id="data_nasc_pai" name="data_nasc_pai" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
-							</div>
-							
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="nac_pai">Nacionalidade:</label>  
 							<div class="col-md-3">
 								<input id="nac_pai" name="nac_pai" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
+						<br><br>				
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="n_rg_pai">RG:</label>  
 							<div class="col-md-3">
 								<input id="n_rg_pai" name="n_rg_pai" type="text" placeholder="Digite o numero do rg" class="form-control input-md">
-							</div>
-							
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="ems_rg_pai">Data de Emissão: </label>
 							<div class="col-md-3">
 								<input id="ems_rg_pai" name="ems_rg_pai" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="org_ems_pai">Orgão Emissor: </label>
 							<div class="col-md-3">
@@ -526,10 +455,8 @@ i<%@page import="br.com.csge.model.Usuario" %>
 									<option value="1"></option>
 									<option value="2"></option>
 								</select>
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>					
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="uf_rg_pai">UF: </label>
 							<div class="col-md-3">
 								<select id="uf_rg_pai" name="uf_rg_pai" class="form-control">
@@ -538,17 +465,14 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								</select>
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="n_cpf_pai">CPF:</label>  
 							<div class="col-md-3">
 								<input id="n_cpf_pai" name="n_cpf_pai" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>	
-						<br>
-						<br>
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="escol_pai">Escolaridade: </label>
 							<div class="col-md-6">
@@ -558,163 +482,122 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								</select>
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="prof_pai">Profissão: </label>
 							<div class="col-md-3">
 								<input id="prof_pai" name="prof_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>					
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="empresa_pai">Empresa: </label>
 							<div class="col-md-3">
 								<input id="empresa_pai" name="empresa_pai" type="text" placeholder="Empresa em que trabalha" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
-						<br>
+						<br><br><br>
 						<h5>TELEFONES</h5>
-						<br>
-												
+						<br>					
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="tel_com_pai">Comercial: </label>
 							<div class="col-md-3">
 								<input id="tel_com_pai" name="tel_com_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>					
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="ramal_com_pai">Ramal: </label>
 							<div class="col-md-3">
 								<input id="ramal_com_pai" name="ramal_com_pai" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="tel_res_pai">Residencial: </label>
 							<div class="col-md-3">
 								<input id="tel_res_pai" name="tel_res_pai" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="cel1_pai">Celular 1: </label>
 							<div class="col-md-3">
 								<input id="cel1_pai" name="cel1_pai" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="cel2_pai">Celular 2: </label>
 							<div class="col-md-3">
 								<input id="cel2_pai" name="cel2_pai" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="rec1_pai">Recado 1: </label>
 							<div class="col-md-3">
 								<input id="rec1_pai" name="rec1_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-							
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="cont_rec1_pai">Falar com: </label>
 							<div class="col-md-3">
 								<input id="cont_rec1_pai" name="cont_rec1_pai" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="rec2_pai">Recado 2: </label>
 							<div class="col-md-3">
 								<input id="rec2_pai" name="rec2_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-							
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="cont_rec2_pai">Falar com: </label>
 							<div class="col-md-3">
 								<input id="cont_rec2_pai" name="cont_rec2_pai" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="separador"></div>
-					</div>
-	
+					</div>	
 <!--Outro Responsável-->
 					<div class="col-md-12">
 						<h3>Outro Responsável</h3>
-						<br>
-						<br>
-
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="grau_paren">Grau de Parentesco:</label>  
 							<div class="col-md-6">
 								<input id="grau_paren" name="grau_paren" type="text" placeholder="Digite o grau de parentesco" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="nome_resp">Nome Completo:</label>  
 							<div class="col-md-6">
 								<input id="nome_resp" name="nome_resp" type="text" placeholder="Digite o nome do responsavel" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="data_nasc_resp">Data de Nascimento: </label>
 							<div class="col-md-3">
 								<input id="data_nasc_resp" name="data_nasc_resp" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
-							</div>
-							
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="nac_resp">Nacionalidade:</label>  
 							<div class="col-md-3">
 								<input id="nac_resp" name="nac_resp" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
+						<br><br>				
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="n_rg_resp">RG:</label>  
 							<div class="col-md-3">
 								<input id="n_rg_resp" name="n_rg_resp" type="text" placeholder="Digite o numero do rg" class="form-control input-md">
-							</div>
-							
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="ems_rg_">Data de Emissão: </label>
 							<div class="col-md-3">
 								<input id="ems_rg_resp" name="ems_rg_resp" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="org_ems_resp">Orgão Emissor: </label>
 							<div class="col-md-3">
@@ -722,10 +605,8 @@ i<%@page import="br.com.csge.model.Usuario" %>
 									<option value="1"></option>
 									<option value="2"></option>
 								</select>
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>					
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="uf_rg_resp">UF: </label>
 							<div class="col-md-3">
 								<select id="uf_rg_resp" name="uf_rg_resp" class="form-control">
@@ -734,17 +615,14 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								</select>
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="n_cpf_resp">CPF:</label>  
 							<div class="col-md-3">
 								<input id="n_cpf_resp" name="n_cpf_resp" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>	
-						<br>
-						<br>
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="escol_resp">Escolaridade: </label>
 							<div class="col-md-6">
@@ -754,132 +632,97 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								</select>
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="prof_resp">Profissão: </label>
 							<div class="col-md-3">
 								<input id="prof_resp" name="prof_resp" type="text" placeholder="" class="form-control input-md">
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>					
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="empresa_resp">Empresa: </label>
 							<div class="col-md-3">
 								<input id="empresa_resp" name="empresa_resp" type="text" placeholder="Empresa em que trabalha" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
-						<br>
+						<br><br><br>
 						<h5>TELEFONES</h5>
-						<br>
-												
+						<br>												
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="tel_com_resp">Comercial: </label>
 							<div class="col-md-3">
 								<input id="tel_com_resp" name="tel_com_resp" type="text" placeholder="" class="form-control input-md">
-							</div>
-					
-							<div class="col-md-2"></div>
-							
+							</div>					
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="ramal_com_resp">Ramal: </label>
 							<div class="col-md-3">
 								<input id="ramal_com_resp" name="ramal_com_resp" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="tel_res_resp">Residencial: </label>
 							<div class="col-md-3">
 								<input id="tel_res_resp" name="tel_res_resp" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="cel1_resp">Celular 1: </label>
 							<div class="col-md-3">
 								<input id="cel1_resp" name="cel1_resp" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="cel2_resp">Celular 2: </label>
 							<div class="col-md-3">
 								<input id="cel2_resp" name="cel2_resp" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="rec1_resp">Recado 1: </label>
 							<div class="col-md-3">
 								<input id="rec1_resp" name="rec1_resp" type="text" placeholder="" class="form-control input-md">
-							</div>
-							
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="cont_rec1_resp">Falar com: </label>
 							<div class="col-md-3">
 								<input id="cont_rec1_resp" name="cont_rec1_resp" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="rec2_resp">Recado 2: </label>
 							<div class="col-md-3">
 								<input id="rec2_resp" name="rec2_resp" type="text" placeholder="" class="form-control input-md">
-							</div>
-							
-							<div class="col-md-2"></div>
-							
+							</div>							
+							<div class="col-md-2"></div>							
 							<label class="col-md-2 control-label" for="cont_rec2_resp">Falar com: </label>
 							<div class="col-md-3">
 								<input id="cont_rec2_resp" name="cont_rec2_resp" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
-					</div>	
-
-																									
+						<br><br>						
+					</div>																									
 						<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Próximo</button>
-			
 				</div>
 			</div>
-
 <!-- Contrato -->				
 			<div class="row setup-content" id="step-3">
 				<div class="col-xs-12">
 					<div class="col-md-12">
 						<h3>Mensalidade e Contrato</h3>
-						<br>
-						<br>
-
+						<br><br>
 						<h5>Mensalidade</h5>
-						<br>
-						<br>
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="dat_venc">Data de Vencimento: </label>
 							<div class="col-md-3">
 								<input id="data_venc" name="data_venc" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="periodo">Período: </label>
 							<div class="col-md-4">
@@ -891,49 +734,37 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								</select>
 							 </div>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="desc">Desconto/Bolsa: </label>
 							<div class="col-md-4">
 								<input id="desc" name="desc" type="text" placeholder="Digite o valor do desconto em R$" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
+						<br><br>				
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="desc">Valor da Mensalidade: </label>
 							<div class="col-md-4">
 								<input id="desc" name="desc" type="text" placeholder="Digite o valor da mensalidade em R$" class="form-control input-md">
 							</div>
 						</div>
-						<br>
-						<br>
-				
+						<br><br>				
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="obs_al">Observações:</label>  
 							<div class="col-md-6">
 								<textarea class="form-control" id="obs_al" name="obs_al"></textarea>
 							</div>
-							<br>
-							<br>
+							<br><br>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="contrato">Contrato:</label>  
 							<div class="col-md-6">
 								<textarea class="form-control" id="contrato" name="contrato"></textarea>
 							</div>
-							<br>
-							<br>
+							<br><br>
 						</div>
-						<br>
-						<br>
-						
+						<br><br>						
 						<div class="form-group">
 							<div class="col-md-6">
 								<button class="btn btn-info btn-sm pull-right" type="submit">Imprimir Cadastro</button>
@@ -942,20 +773,16 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								<button class="btn btn-info btn-sm" type="submit">Imprimir Contrato</button>
 							</div>
 						</div>
-						<br>
-						<br>
-						<br>
-						<br>
+						<br><br><br><br>
 						<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Próximo</button>
-					</div>
-					
+					</div>					
 				</div>
 			</div>		
 <!--Finalizar-->
 				<div class="row setup-content" id="step-4">
 					<div class="col-xs-12">
 						<div class="col-md-12">
-							<h3>Conferir e Enviar</h3>
+							<h3>Conferir e Enviar</h3>													
 							<button class="btn btn-success btn-lg pull-right" type="submit">Enviar</button>
 						</div>
 					</div>
@@ -982,10 +809,6 @@ i<%@page import="br.com.csge.model.Usuario" %>
 				</div>
 			</div>	
 		</div>
-	</div>
-</div>	
-</div>
-	
 	<!--Javascript-->
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
