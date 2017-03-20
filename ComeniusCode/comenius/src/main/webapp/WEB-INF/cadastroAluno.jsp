@@ -80,7 +80,11 @@ i<%@page import="br.com.csge.model.Usuario" %>
 							</div>
 						</div>
 						<br><br>
-						<div class="form-group">													
+						<div class="form-group">
+							<h3>Naturalidade:</h3>	
+						</div>
+						<br><br>
+						<div class="form-group">																		
 							<label class="col-md-2 control-label" for="uf">Estado: </label>						
 							<div class="col-md-3">							
 								<select name="uf" id="uf" onchange="changeUf(0)" class="form-control" >
