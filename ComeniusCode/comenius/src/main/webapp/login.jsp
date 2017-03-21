@@ -1,37 +1,25 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-	<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=deveice-width, inicial=scale=1.0" >
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" href="css/style.css">
 	
-	<title>Comenius - Sistema de Gest√£o Escolar</title>
+	<title>Comenius - Sistema de Gest„o Escolar</title>
 	
-	<style type="text/css">
-	.logo-login{
-		margin-top: 20px;
-		margin-bottom: 40px;
-		float: center;
-
-	}
-	
-	</style>
-
 </head>
 <body>
 	<div class="fluid-container">
 		<div class="login-container login">
-        	<div class="row logo-login">
-        		<div class="col-md-2"></div>
-        		<div class="col-md-8">
-					<img src="img/comenius_title.png" class="img-responsive center-block" alt="Escola Podium">
-            	</div>
-            	<div class="col-md-2"></div>           
-            </div>
+			<div>
+				<jsp:include page = "cabecalho.jsp" />
+			</div>
             <div class="row">
-            	<form class="form-login" action="login" method="post">
+            	<form class="form-login" action="login" method="POST">
             		<div class="col-md-4"></div>
   					<div class="col-md-4">  
                 		<span id="email" class="email"></span>
