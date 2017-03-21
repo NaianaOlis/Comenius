@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.csge.dao.UsuarioDAO;
+import br.com.csge.dao.UsuarioDao;
 import br.com.csge.model.Aluno;
 import br.com.csge.model.Usuario;
 import br.com.csge.util.ConnectionFactory;
@@ -46,8 +46,8 @@ public class AlunoController extends HttpServlet {
 			
 		    aluno.setNome(request.getParameter("nome_completo"));
 
-		    AlunoDao alunoDao = new AlunoDao();		    
-		    alunoDao.adiciona(aluno);		    
+		    UsuarioDao uDao = new UsuarioDao();		        
+		    uDao.adicionar(aluno);		    
 			
 			RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/sucesso.jsp");
 			dispatcher.forward(request, response);				

@@ -6,7 +6,7 @@ import java.util.*;
 import br.com.csge.model.Usuario;
 import br.com.csge.util.ConnectionFactory;
 
-public class UsuarioDAO {
+public class UsuarioDao {
 	private Connection con = ConnectionFactory.getConnection();	
 	
 	public Usuario autenticar(Usuario uConsulta){
@@ -30,6 +30,13 @@ public class UsuarioDAO {
 			e.printStackTrace();
 		}
 		return null;
+	}
+	public Usuario adicionar(Usuario uAdd){
+		
+		Usuario u = new Usuario();
+		
+		return u;
+		
 	}
 
 

@@ -1,19 +1,14 @@
 package br.com.csge.model;
 
-public class Aluno {
-	private String nome;
+public class Aluno extends Usuario {
+	private int cgm;
+	private String escolaAnterior;
 
 	public Aluno() {
 		super();	
 	}
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+	
 	
 	
 }

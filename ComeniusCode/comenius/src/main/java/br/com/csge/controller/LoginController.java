@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import br.com.csge.dao.UsuarioDAO;
+import br.com.csge.dao.UsuarioDao;
 import br.com.csge.model.Usuario;
 
 @WebServlet("/login")
@@ -59,7 +59,7 @@ public class LoginController extends HttpServlet {
 		u.setSenha(hexaSenha);
 
 		// 3)Consultando se usuário existe no banco
-		UsuarioDAO uDao = new UsuarioDAO();
+		UsuarioDao uDao = new UsuarioDao();
 		Usuario uAutenticado = uDao.autenticar(u);
 
 		// 4)Verificando se o usuário foi encontrado
