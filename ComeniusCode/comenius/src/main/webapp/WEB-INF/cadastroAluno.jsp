@@ -1,4 +1,4 @@
-i<%@page import="br.com.csge.model.Usuario" %>
+<%@page import="br.com.csge.model.Usuario" %>
 <%@ page language="java" 
 	contentType="text/html; charset=UTF-8"  
 	pageEncoding="UTF-8"%>
@@ -352,213 +352,39 @@ i<%@page import="br.com.csge.model.Usuario" %>
 							</div>
 						</div>
 						<br><br><br>
-						<h5>TELEFONES</h5>
+						<h5>TELEFONES: &nbsp &nbsp
+							<img  src="img/add.png" height="42" width="42" style="cursor: pointer;" onclick="duplicarCamposMae();"/>
+						</h5>
 						<br>												
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="tel_com_mae">Comercial: </label>
-							<div class="col-md-3">
-								<input id="tel_com_mae" name="tel_com_mae" type="text" placeholder="" class="form-control input-md">
-							</div>					
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="ramal_com_mae">Ramal: </label>
-							<div class="col-md-3">
-								<input id="ramal_com_mae" name="ramal_com_mae" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="tel_res_mae">Residencial: </label>
-							<div class="col-md-3">
-								<input id="tel_res_mae" name="tel_res_mae" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="cel1_mae">Celular 1: </label>
-							<div class="col-md-3">
-								<input id="cel1'_mae" name="cel1_mae" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="cel2_mae">Celular 2: </label>
-							<div class="col-md-3">
-								<input id="cel2'_mae" name="cel2_mae" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="rec1_mae">Recado 1: </label>
-							<div class="col-md-3">
-								<input id="rec1'_mae" name="rec1_mae" type="text" placeholder="" class="form-control input-md">
+						<div class="form-group" id="div_fone_mae">								
+							<div id="origem_mae" align="center" name="origem_mae">							
+								<div class="col-md-2">								
+									<select id="tipo_fone_mae" name="tipo_fone_mae[]" class="form-control">
+										<option value="Celular">Celular</option>
+										<option value="Residencial">Residencial</option>
+										<option value="Comercial">Comercial</option>
+									</select>							
+								</div>
+								<div class="col-md-3">
+									<input id="fone_mae" name="fone_mae[]" type="number" placeholder="" class="form-control input-md"/>
+								</div>								
+								<label class="col-md-1 control-label" for="obs_mae">Obs: </label>
+								<div class="col-md-3">
+									<input id="obs_mae" name="obs_mae[]" type="text" placeholder="" class="form-control input-md"/>
+								</div> 								
+								<div class="col-md-1"></div></br></br></br>
 							</div>							
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="cont_rec1_mae">Falar com: </label>
-							<div class="col-md-3">
-								<input id="cont_rec1_mae" name="cont_rec1_mae" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="rec2_mae">Recado 2: </label>
-							<div class="col-md-3">
-								<input id="rec2'_mae" name="rec2_mae" type="text" placeholder="" class="form-control input-md">
-							</div>							
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="cont_rec2_mae">Falar com: </label>
-							<div class="col-md-3">
-								<input id="cont_rec2_mae" name="cont_rec2_mae" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
+							<div id="destino_mae"></div>
+						</div><br>
+						<h5 id="add_resp">ADICIONAR RESPONSÁVEL: &nbsp &nbsp
+							<img  src="img/add.png" height="42" width="42" style="cursor: pointer;" onclick="exibirCampoResponsavel('block');"/>
+						</h5>
+						<br>											
 						<div class="separador"></div>
 					</div>
-<!--Dados Pai-->
-					<div class="col-md-12">
-						<h3>Dados do Pai</h3>
-						<br><br>
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="nome_pai">Nome Completo:</label>  
-							<div class="col-md-6">
-								<input id="nome_pai" name="nome_pai" type="text" placeholder="Digite o nome do pai" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>				
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="data_nasc_pai">Data de Nascimento: </label>
-							<div class="col-md-3">
-								<input id="data_nasc_pai" name="data_nasc_pai" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
-							</div>							
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="nac_pai">Nacionalidade:</label>  
-							<div class="col-md-3">
-								<input id="nac_pai" name="nac_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>				
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="n_rg_pai">RG:</label>  
-							<div class="col-md-3">
-								<input id="n_rg_pai" name="n_rg_pai" type="text" placeholder="Digite o numero do rg" class="form-control input-md">
-							</div>							
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="ems_rg_pai">Data de Emissão: </label>
-							<div class="col-md-3">
-								<input id="ems_rg_pai" name="ems_rg_pai" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="org_ems_pai">Orgão Emissor: </label>
-							<div class="col-md-3">
-								<select id="org_ems_pai" name="org_ems_pai" class="form-control">
-									<option value="1"></option>
-									<option value="2"></option>
-								</select>
-							</div>					
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="uf_rg_pai">UF: </label>
-							<div class="col-md-3">
-								<select id="uf_rg_pai" name="uf_rg_pai" class="form-control">
-									<option value="1"></option>
-									<option value="2"></option>
-								</select>
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="n_cpf_pai">CPF:</label>  
-							<div class="col-md-3">
-								<input id="n_cpf_pai" name="n_cpf_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>	
-						<br><br>
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="escol_pai">Escolaridade: </label>
-							<div class="col-md-6">
-								<select id="escol_pai" name="escol_pai" class="form-control">
-									<option value="1"></option>
-									<option value="2"></option>
-								</select>
-							</div>
-						</div>
-						<br><br>
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="prof_pai">Profissão: </label>
-							<div class="col-md-3">
-								<input id="prof_pai" name="prof_pai" type="text" placeholder="" class="form-control input-md">
-							</div>					
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="empresa_pai">Empresa: </label>
-							<div class="col-md-3">
-								<input id="empresa_pai" name="empresa_pai" type="text" placeholder="Empresa em que trabalha" class="form-control input-md">
-							</div>
-						</div>
-						<br><br><br>
-						<h5>TELEFONES</h5>
-						<br>					
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="tel_com_pai">Comercial: </label>
-							<div class="col-md-3">
-								<input id="tel_com_pai" name="tel_com_pai" type="text" placeholder="" class="form-control input-md">
-							</div>					
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="ramal_com_pai">Ramal: </label>
-							<div class="col-md-3">
-								<input id="ramal_com_pai" name="ramal_com_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="tel_res_pai">Residencial: </label>
-							<div class="col-md-3">
-								<input id="tel_res_pai" name="tel_res_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="cel1_pai">Celular 1: </label>
-							<div class="col-md-3">
-								<input id="cel1_pai" name="cel1_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="cel2_pai">Celular 2: </label>
-							<div class="col-md-3">
-								<input id="cel2_pai" name="cel2_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="rec1_pai">Recado 1: </label>
-							<div class="col-md-3">
-								<input id="rec1_pai" name="rec1_pai" type="text" placeholder="" class="form-control input-md">
-							</div>							
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="cont_rec1_pai">Falar com: </label>
-							<div class="col-md-3">
-								<input id="cont_rec1_pai" name="cont_rec1_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="rec2_pai">Recado 2: </label>
-							<div class="col-md-3">
-								<input id="rec2_pai" name="rec2_pai" type="text" placeholder="" class="form-control input-md">
-							</div>							
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="cont_rec2_pai">Falar com: </label>
-							<div class="col-md-3">
-								<input id="cont_rec2_pai" name="cont_rec2_pai" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="separador"></div>
-					</div>	
-<!--Outro Responsável-->
-					<div class="col-md-12">
-						<h3>Outro Responsável</h3>
+<!--Responsaveis-->
+					<div class="col-md-12" id= "responsaveis">
+						<h3>Responsável</h3>
 						<br><br>
 						<div class="form-group">
 							<label class="col-md-2 control-label" for="grau_paren">Grau de Parentesco:</label>  
@@ -566,50 +392,56 @@ i<%@page import="br.com.csge.model.Usuario" %>
 								<input id="grau_paren" name="grau_paren" type="text" placeholder="Digite o grau de parentesco" class="form-control input-md">
 							</div>
 						</div>
-						<br><br>						
+						<br><br>
 						<div class="form-group">
-							<label class="col-md-2 control-label" for="nome_resp">Nome Completo:</label>  
+							<label class="col-md-2 control-label" for="nome">Nome Completo:</label>  
 							<div class="col-md-6">
-								<input id="nome_resp" name="nome_resp" type="text" placeholder="Digite o nome do responsavel" class="form-control input-md">
+								<input id="nome" name="nome[]" type="text" placeholder="Digite o nome completo do responsável" class="form-control input-md">
 							</div>
 						</div>
 						<br><br>
 						<div class="form-group">
-							<label class="col-md-2 control-label" for="data_nasc_resp">Data de Nascimento: </label>
+							<label class="col-md-2 control-label" for="data_nasc">Data de Nascimento: </label>
 							<div class="col-md-3">
-								<input id="data_nasc_resp" name="data_nasc_resp" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
-							</div>							
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="nac_resp">Nacionalidade:</label>  
+								<input id="data_nasc" name="data_nasc[]" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
+							</div>
+							
+							<div class="col-md-2"></div>
+							
+							<label class="col-md-2 control-label" for="nac">Nacionalidade:</label>  
 							<div class="col-md-3">
-								<input id="nac_resp" name="nac_resp" type="text" placeholder="" class="form-control input-md">
+								<input id="nac" name="nac[]" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>
 						<br><br>				
 						<div class="form-group">
-							<label class="col-md-2 control-label" for="n_rg_resp">RG:</label>  
+							<label class="col-md-2 control-label" for="n_rg">RG:</label>  
 							<div class="col-md-3">
-								<input id="n_rg_resp" name="n_rg_resp" type="text" placeholder="Digite o numero do rg" class="form-control input-md">
-							</div>							
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="ems_rg_">Data de Emissão: </label>
+								<input id="n_rg" name="n_rg[]" type="text" placeholder="Digite o numero do rg" class="form-control input-md">
+							</div>
+							
+							<div class="col-md-2"></div>
+							
+							<label class="col-md-2 control-label" for="ems_rg">Data de Emissão: </label>
 							<div class="col-md-3">
-								<input id="ems_rg_resp" name="ems_rg_resp" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
+								<input id="ems_rg" name="ems_rg[]" type="date" placeholder="dd/mm/aaaa" class="form-control input-md">
 							</div>
 						</div>
 						<br><br>						
 						<div class="form-group">
-							<label class="col-md-2 control-label" for="org_ems_resp">Orgão Emissor: </label>
+							<label class="col-md-2 control-label" for="org_ems">Orgão Emissor: </label>
 							<div class="col-md-3">
-								<select id="org_ems_resp" name="org_ems_resp" class="form-control">
+								<select id="org_ems" name="org_ems[]" class="form-control">
 									<option value="1"></option>
 									<option value="2"></option>
 								</select>
-							</div>					
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="uf_rg_resp">UF: </label>
+							</div>
+					
+							<div class="col-md-2"></div>
+							
+							<label class="col-md-2 control-label" for="uf_rg">UF: </label>
 							<div class="col-md-3">
-								<select id="uf_rg_resp" name="uf_rg_resp" class="form-control">
+								<select id="uf_rg" name="uf_rg[]" class="form-control">
 									<option value="1"></option>
 									<option value="2"></option>
 								</select>
@@ -617,16 +449,16 @@ i<%@page import="br.com.csge.model.Usuario" %>
 						</div>
 						<br><br>						
 						<div class="form-group">
-							<label class="col-md-2 control-label" for="n_cpf_resp">CPF:</label>  
+							<label class="col-md-2 control-label" for="n_cpf">CPF:</label>  
 							<div class="col-md-3">
-								<input id="n_cpf_resp" name="n_cpf_resp" type="text" placeholder="" class="form-control input-md">
+								<input id="n_cpf" name="n_cpf[]" type="text" placeholder="" class="form-control input-md">
 							</div>
 						</div>	
 						<br><br>
 						<div class="form-group">
-							<label class="col-md-2 control-label" for="escol_resp">Escolaridade: </label>
+							<label class="col-md-2 control-label" for="escol">Escolaridade: </label>
 							<div class="col-md-6">
-								<select id="escol_resp" name="escol_resp" class="form-control">
+								<select id="escol" name="escol[]" class="form-control">
 									<option value="1"></option>
 									<option value="2"></option>
 								</select>
@@ -634,80 +466,53 @@ i<%@page import="br.com.csge.model.Usuario" %>
 						</div>
 						<br><br>						
 						<div class="form-group">
-							<label class="col-md-2 control-label" for="prof_resp">Profissão: </label>
+							<label class="col-md-2 control-label" for="prof">Profissão: </label>
 							<div class="col-md-3">
-								<input id="prof_resp" name="prof_resp" type="text" placeholder="" class="form-control input-md">
+								<input id="prof" name="prof[]" type="text" placeholder="" class="form-control input-md">
 							</div>					
 							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="empresa_resp">Empresa: </label>
+							<label class="col-md-2 control-label" for="empresa">Empresa: </label>
 							<div class="col-md-3">
-								<input id="empresa_resp" name="empresa_resp" type="text" placeholder="Empresa em que trabalha" class="form-control input-md">
+								<input id="empresa" name="empresa[]" type="text" placeholder="Empresa em que trabalha" class="form-control input-md">
 							</div>
 						</div>
 						<br><br><br>
-						<h5>TELEFONES</h5>
+<!-----------------------------------------------------------------------------------------------> 							
+						<h5>TELEFONES: &nbsp &nbsp
+							<img  src="img/add.png" height="42" width="42" style="cursor: pointer;" onclick="duplicarCamposResp();"/>
+						</h5>						
 						<br>												
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="tel_com_resp">Comercial: </label>
-							<div class="col-md-3">
-								<input id="tel_com_resp" name="tel_com_resp" type="text" placeholder="" class="form-control input-md">
-							</div>					
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="ramal_com_resp">Ramal: </label>
-							<div class="col-md-3">
-								<input id="ramal_com_resp" name="ramal_com_resp" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="tel_res_resp">Residencial: </label>
-							<div class="col-md-3">
-								<input id="tel_res_resp" name="tel_res_resp" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="cel1_resp">Celular 1: </label>
-							<div class="col-md-3">
-								<input id="cel1_resp" name="cel1_resp" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="cel2_resp">Celular 2: </label>
-							<div class="col-md-3">
-								<input id="cel2_resp" name="cel2_resp" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="rec1_resp">Recado 1: </label>
-							<div class="col-md-3">
-								<input id="rec1_resp" name="rec1_resp" type="text" placeholder="" class="form-control input-md">
+						<div class="form-group" id="div_fone_resp">								
+							<div id="origem_resp" align="center" name="origem_resp">														
+								<div class="col-md-2">								
+									<select id="tipo_fone" name="tipo_fone[]" class="form-control">
+										<option value="Celular">Celular</option>
+										<option value="Residencial">Residencial</option>
+										<option value="Comercial">Comercial</option>
+									</select>							
+								</div>
+								<div class="col-md-3">
+									<input id="fone" name="fone[]" type="number" placeholder="" class="form-control input-md"/>
+								</div>								
+								<label class="col-md-1 control-label" for="obs">Obs: </label>
+								<div class="col-md-3">
+									<input id="obs" name="obs[]" type="text" placeholder="" class="form-control input-md"/>
+								</div> 								
+								<div class="col-md-1"></div></br></br></br>
 							</div>							
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="cont_rec1_resp">Falar com: </label>
-							<div class="col-md-3">
-								<input id="cont_rec1_resp" name="cont_rec1_resp" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-						<div class="form-group">
-							<label class="col-md-2 control-label" for="rec2_resp">Recado 2: </label>
-							<div class="col-md-3">
-								<input id="rec2_resp" name="rec2_resp" type="text" placeholder="" class="form-control input-md">
-							</div>							
-							<div class="col-md-2"></div>							
-							<label class="col-md-2 control-label" for="cont_rec2_resp">Falar com: </label>
-							<div class="col-md-3">
-								<input id="cont_rec2_resp" name="cont_rec2_resp" type="text" placeholder="" class="form-control input-md">
-							</div>
-						</div>
-						<br><br>						
-					</div>																									
-						<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Próximo</button>
+							<div id="destino_resp"></div>
+						</div><br>
+						<h5 id="add_resp_2">ADICIONAR RESPONSÁVEL: &nbsp &nbsp
+							<img  src="img/add.png" height="42" width="42" style="cursor: pointer;" onclick="exibirCampoResponsavel('novo');"/>
+						</h5>
+<!--------------------------------------------------------------------------------------->													
+						<br>
+						<div class="separador"></div><br><br>	
+						<div id="novoR"></div>					
+					</div>
+					<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Próximo</button>
 				</div>
-			</div>
+			</div>	
 <!-- Contrato -->				
 			<div class="row setup-content" id="step-3">
 				<div class="col-xs-12">
@@ -819,10 +624,82 @@ i<%@page import="br.com.csge.model.Usuario" %>
 <!-- ************************************************************************************************************************ -->																
 							<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 							<script>
+							function novoResponsavel(){
+								var clone = document.getElementById('responsaveis').cloneNode(true);
+								var destino = document.getElementById('novoR');
+								
+								destino.appendChild (clone);
+								var camposClonados = clone.getElementsByTagName('input');		
+								var camposClonadosSelect = clone.getElementsByTagName('select');
+	
+								for(i=0; i<camposClonados.length;i++){
+									camposClonados[i].value = '';									
+								} 	 
+								for(i=0; i<camposClonadosSelect.length;i++){
+									camposClonadosSelect[i].value = '';									
+								} 	
+							}
+							
+							function duplicarCamposResp(){	
+								
+								var clone = document.getElementById('origem_resp').cloneNode(true);
+								var destino = document.getElementById('destino_resp');			
+								destino.appendChild (clone);
+								var camposClonados = clone.getElementsByTagName('input');									
+	
+								for(i=0; i<camposClonados.length;i++){
+									camposClonados[i].value = '';									
+								} 	 
+
+								 
+								 /* //testes
+								 //y = quantos select existem dentro da div_fone_resp
+								 var x = document.getElementById("div_fone_resp").getElementsByTagName('select');								 
+								 var y = x.length;
+								 
+								 //w = qual o name do segundo select
+								 var w = x[1].name;	
+								 
+								 //exibe y e w
+								 console.log("xxxxxx yyyyyy "+ y);
+								 console.log("xxxxxx yyyyyy "+ w);
+								
+								 //exibe - a = quantos elementos com o nome de 'origem_resp' existem
+								 var z = document.getElementsByName('origem_resp');
+								 var a = z.length;
+								 console.log("zzzzzz aaaaaa "+ a); */
+								
+							}
+							function duplicarCamposMae(){	
+								
+								var clone = document.getElementById('origem_mae').cloneNode(true);
+								var destino = document.getElementById('destino_mae');			
+								destino.appendChild (clone);
+								var camposClonados = clone.getElementsByTagName('input');									
+	
+								for(i=0; i<camposClonados.length;i++){
+									camposClonados[i].value = '';									
+								} 	 
+							}
+							
 							//Ao abrir janela chama função comboUf
-								window.onload = function () {
-						        	comboUf();
-						    	}					
+								window.addEventListener("pageshow", comboUf);		
+							
+								window.addEventListener("pageshow", exibirCampoResponsavel("none"));
+							
+								function exibirCampoResponsavel(acao){
+									document.getElementById('responsaveis').style.display = acao;
+									
+									if(acao == "none"){										
+										document.getElementById('add_resp').style.display = "block";
+									}else if(acao == "novo"){
+										document.getElementById('add_resp_2').style.display = "none";
+										novoResponsavel();										
+									}else{
+										document.getElementById('add_resp').style.display = "none";
+									}
+								}
+							
 								//campos 0=uf 1=uf_cert 2=uf_res_aluno 
 								function changeUf(campo) {
 									$.getJSON('http://www.geonames.org/childrenJSON?geonameId=3469034', function(data) {			        	
@@ -852,23 +729,31 @@ i<%@page import="br.com.csge.model.Usuario" %>
 										var output="<select>";
 										var outputCert="<select>";
 										var outputRg="<select>";
-										var outputEnd="<select>";										
+										var outputEnd="<select>";	
+										var outputRgMae="<select>";
+										var outputUfRg="<select>";
 						        		for (var i in data.geonames) {
 						        			//pega dados do json do primeiro (i) até o último item
 						        		    output+="<option>" + data.geonames[i].name;		
 						        		    outputCert+="<option>" + data.geonames[i].name;
 						        		    outputRg+="<option>" + data.geonames[i].name;
 						        		    outputEnd+="<option>" + data.geonames[i].name;
+						        		    outputRgMae+="<option>" + data.geonames[i].name;
+						        		    outputUfRg+="<option>" + data.geonames[i].name;
 						        		}
 						        		output+="</select>";
 						        		outputCert+="</select>";
 						        		outputRg+="</select>";
 						        		outputEnd+="</select>";
+						        		outputRgMae+="</select>";
+						        		outputUfRg+="</select>";
 						        		//escreve no option
 						        		document.getElementById("uf").innerHTML=output;	
 						        		document.getElementById("uf_cert").innerHTML=output;	
 						        		document.getElementById("uf_rg_aluno").innerHTML=output;	
-						        		document.getElementById("uf_res_aluno").innerHTML=output;						        				
+						        		document.getElementById("uf_res_aluno").innerHTML=output;	
+						        		document.getElementById("uf_rg_mae").innerHTML=output;
+						        		document.getElementById("uf_rg").innerHTML=output;
 						        		//todos menos o campo da uf do rg passam um número para a função
 						        		//changeUf() que vê qual dos select foi modificado e chama a função para 
 						        		//popular o select de cidade do select correspondente de acordo

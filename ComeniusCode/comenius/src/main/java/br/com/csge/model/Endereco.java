@@ -10,7 +10,8 @@ public class Endereco  implements Serializable{
 	   private String bairro;
 	   private String complemento;
 	   private int cep;
-	   private Cidade cidade;
+	   private String cidade;
+	   private String uf;
 	   
 	public Endereco() {
 		
@@ -51,11 +52,17 @@ public class Endereco  implements Serializable{
 	public void setCep(int cep) {
 		this.cep = cep;
 	}
-	public Cidade getCidade() {
+	public String getCidade() {
 		return cidade;
 	}
-	public void setCidade(Cidade cidade) {
+	public void setCidade(String cidade) {
 		this.cidade = cidade;
+	}
+	public String getUf() {
+		return uf;
+	}
+	public void setUf(String uf) {
+		this.uf = uf;
 	}
 	   
 

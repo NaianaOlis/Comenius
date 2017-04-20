@@ -12,11 +12,13 @@ public class Usuario implements Serializable{
    private Date dataNac;
    private String rg;
    private String rgEmissor;
-   private Uf ufrg;
+   private String ufRg;
+   private Date dataEmissaoRg;
    private String senha;
    private Integer cpf;
    private Integer genero;
    private String estadoCivil;
+   
    
    
    
@@ -126,15 +128,15 @@ public class Usuario implements Serializable{
 
 
 
-	public Uf getUfrg() {
-		return ufrg;
+	public String getUfrg() {
+		return ufRg;
 	}
 
 
 
 
-	public void setUfrg(Uf ufrg) {
-		this.ufrg = ufrg;
+	public void setUfrg(String ufrg) {
+		this.ufRg = ufrg;
 	}
 
 
@@ -196,10 +198,24 @@ public class Usuario implements Serializable{
 
 
 
+	public Date getDataEmissaoRg() {
+		return dataEmissaoRg;
+	}
+
+
+
+
+	public void setDataEmissaoRg(Date dataEmissaoRg) {
+		this.dataEmissaoRg = dataEmissaoRg;
+	}
+
+
+
+
 	@Override
 	public String toString() {
 		return "Usuario [id=" + id + ", endereco=" + endereco + ", nome=" + nome + ", email=" + email + ", dataNac="
-				+ dataNac + ", rg=" + rg + ", rgEmissor=" + rgEmissor + ", ufrg=" + ufrg + ", senha=" + senha + ", cpf="
+				+ dataNac + ", rg=" + rg + ", rgEmissor=" + rgEmissor + ", ufrg=" + ufRg + ", senha=" + senha + ", cpf="
 				+ cpf + ", genero=" + genero + ", estadoCivil=" + estadoCivil + "]";
 	}
 
