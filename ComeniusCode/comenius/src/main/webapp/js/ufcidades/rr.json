@@ -1,0 +1,22 @@
+{
+"totalResultsCount":15,
+"capital":"Boa Vista",
+"geonames":
+	[
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Alto Alegre","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400050"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Amajari","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400027"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Boa Vista","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400100"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Bonfim","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400159"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Cantá","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400175"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Caracaraí","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400209"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Caroebe","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400233"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Iracema","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400282"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Mucajaí","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400308"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Normandia","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400407"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Pacaraima","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400456"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Rorainópolis","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400472"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"São João da Baliza","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400506"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"São Luiz","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400605"},
+		{"idUf":"14","countryCode":"BR","estadoCode":"RR","name":"Uiramutã","countryName":"Brazil","nameUf":"Roraima","idCidade":"1400704"}
+	]
+}

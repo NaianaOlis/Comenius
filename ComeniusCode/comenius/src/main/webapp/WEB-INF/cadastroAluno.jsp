@@ -702,7 +702,7 @@
 							
 								//campos 0=uf 1=uf_cert 2=uf_res_aluno 
 								function changeUf(campo) {
-									$.getJSON('http://www.geonames.org/childrenJSON?geonameId=3469034', function(data) {			        	
+									$.getJSON('http://localhost:8080/comenius/js/ufcidades/brasil.json', function(data) {			        	
 										var indice, campoSelecao;	
 										//de acordo com o campo 0, 1 ou 2
 										//guarda a opção que está selecionada
@@ -718,13 +718,13 @@
 											var campoSelecao = "cidade_res_aluno";
 										}										
 										//codigo da uf selecionada de acordo com o json
-										var cod = data.geonames[indice].geonameId;
-										comboCidade(cod, campoSelecao);										
+										var sigla = data.geonames[indice].sigla;
+										comboCidade(sigla, campoSelecao);										
 									});	 
 								}					
 								//popula o select de acordo com o json								
 								function comboUf(){
-									$.getJSON('http://www.geonames.org/childrenJSON?geonameId=3469034', function(data) {						        						        		
+									$.getJSON('http://localhost:8080/comenius/js/ufcidades/brasil.json', function(data) {						        						        		
 										//cada select recebe uma nomeação 
 										var output="<select>";
 										var outputCert="<select>";
@@ -734,12 +734,12 @@
 										var outputUfRg="<select>";
 						        		for (var i in data.geonames) {
 						        			//pega dados do json do primeiro (i) até o último item
-						        		    output+="<option>" + data.geonames[i].name;		
-						        		    outputCert+="<option>" + data.geonames[i].name;
-						        		    outputRg+="<option>" + data.geonames[i].name;
-						        		    outputEnd+="<option>" + data.geonames[i].name;
-						        		    outputRgMae+="<option>" + data.geonames[i].name;
-						        		    outputUfRg+="<option>" + data.geonames[i].name;
+						        		    output+="<option>" + data.geonames[i].nameUf;		
+						        		    outputCert+="<option>" + data.geonames[i].nameUf;
+						        		    outputRg+="<option>" + data.geonames[i].nameUf;
+						        		    outputEnd+="<option>" + data.geonames[i].nameUf;
+						        		    outputRgMae+="<option>" + data.geonames[i].nameUf;
+						        		    outputUfRg+="<option>" + data.geonames[i].nameUf;
 						        		}
 						        		output+="</select>";
 						        		outputCert+="</select>";
@@ -764,8 +764,8 @@
 						        	});	
 								}
 								//coloca o codigo da uf selecionada na url json para listar cidades daquela uf					
-								function comboCidade(cod, campo){								
-									$.getJSON('http://www.geonames.org/childrenJSON?geonameId='+cod, function(data) {
+								function comboCidade(sigla, campo){								
+									$.getJSON('http://localhost:8080/comenius/js/ufcidades/'+sigla+'.json', function(data) {
 							  			var output="<select>";
 							        	for (var i in data.geonames) {
 							        		//pega o nome de todas as cidades 

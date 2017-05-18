@@ -1,0 +1,35 @@
+{
+	"totalResultsCount":27,	
+	"countryCode":"BR" ,
+	"countryName":"Brasil" ,
+	"geonames":
+	[
+		{"sigla":"AC","nameUf":"Acre"},
+		{"sigla":"AL","nameUf":"Alagoas"},
+		{"sigla":"AP","nameUf":"Amapá"},
+		{"sigla":"AM","nameUf":"Amazonas"},
+		{"sigla":"BA","nameUf":"Bahia"},
+		{"sigla":"CE","nameUf":"Ceará"},
+		{"sigla":"DF","nameUf":"Distrito Federal"},
+		{"sigla":"ES","nameUf":"Espírito Santo"},
+		{"sigla":"GO","nameUf":"Goiás"},
+		{"sigla":"MA","nameUf":"Maranhão"},
+		{"sigla":"MT","nameUf":"Mato Grosso"},
+		{"sigla":"MS","nameUf":"Mato Grosso do Sul"},
+		{"sigla":"MG","nameUf":"Minas Gerais"},
+		{"sigla":"PA","nameUf":"Pará"},
+		{"sigla":"PB","nameUf":"Paraíba"},
+		{"sigla":"PR","nameUf":"Paraná"},
+		{"sigla":"PE","nameUf":"Pernambuco"},
+		{"sigla":"PI","nameUf":"Piauí"},
+		{"sigla":"RJ","nameUf":"Rio de Janeiro"},
+		{"sigla":"RN","nameUf":"Rio Grande do Norte"},
+		{"sigla":"RS","nameUf":"Rio Grande do Sul"},
+		{"sigla":"RO","nameUf":"Rondônia"},
+		{"sigla":"RR","nameUf":"Roraima"},
+		{"sigla":"SC","nameUf":"Santa Catarina"},
+		{"sigla":"SP","nameUf":"São Paulo"},
+		{"sigla":"SE","nameUf":"Sergipe"},
+		{"sigla":"TO","nameUf":"Tocantins"}		
+	]
+}
