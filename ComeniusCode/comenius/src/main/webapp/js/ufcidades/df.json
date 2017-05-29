@@ -1,8 +1,6 @@
 {
 	"totalResultsCount":01,
 	"capital":"Brasília",
-	"geonames":
-	[
-		{"idUf":"53","countryCode":"BR","estadoCode":"DF","name":"Brasília","countryName":"Brazil","nameUf":"Distrito Federal","idCidade":"5300108"}
-	]
+	"idUf":"53","countryCode":"BR","estadoCode":"DF","name":"Brasília","countryName":"Brazil","nameUf":"Distrito Federal","idCidade":"5300108"
+	
 }

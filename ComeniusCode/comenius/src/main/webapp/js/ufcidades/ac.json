@@ -3,19 +3,19 @@
 	"capital":"Rio Branco",
 	"geonames":
 	[
-		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Acrel‚ndia" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200013"},
+		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Acrel√¢ndia" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200013"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Assis Brasil" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200054"},
-		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"BrasilÈia" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200104"},
+		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Brasil√©ia" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200104"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Bujari" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200138"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Capixaba" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200179"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Cruzeiro do Sul" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200203"},
-		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Epitaciol‚ndia" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200252"},
-		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"FeijÛ" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200302"},
-		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Jord„o" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200328"},
-		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"M‚ncio Lima" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200336"},
+		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Epitaciol√¢ndia" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200252"},
+		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Feij√≥" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200302"},
+		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Jord√£o" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200328"},
+		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"M√¢ncio Lima" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200336"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Manoel Urbano" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200344"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Marechal Thaumaturgo" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200351"},
-		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Pl·cido de Castro" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200385"},
+		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Pl√°cido de Castro" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200385"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Porto Acre" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200807"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Porto Walter" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200393"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Rio Branco" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200401"},
@@ -23,7 +23,7 @@
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Santa Rosa do Purus" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200435"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Sena Madureira" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200500"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Senador Guiomard" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200450"},
-		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Tarauac·" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200609"},
+		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Tarauac√°" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200609"},
 		{"idUf":"12" , "countryCode":"BR" ,  "estadoCode":"AC" , "name":"Xapuri" , "countryName":"Brazil" , "nameUf":"Acre" , "idCidade":"1200708"}
 	]
 }

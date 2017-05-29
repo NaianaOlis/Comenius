@@ -34,6 +34,7 @@
 		<div class="container">
 			<div class="page-header">
 				<center><h1>Cadastro de Aluno</h1></center>
+				<p id="demo"></p>
 			</div>
 			<form role="form" action="AlunoCtrl?acao=add" method="post">
 <!--Step 1--> 
@@ -718,7 +719,8 @@
 											var campoSelecao = "cidade_res_aluno";
 										}										
 										//codigo da uf selecionada de acordo com o json
-										var sigla = data.geonames[indice].sigla;
+										var sigla = data.geonames[indice].sigla;										
+										sigla = sigla.toLowerCase();
 										comboCidade(sigla, campoSelecao);										
 									});	 
 								}					
@@ -764,14 +766,28 @@
 						        	});	
 								}
 								//coloca o codigo da uf selecionada na url json para listar cidades daquela uf					
-								function comboCidade(sigla, campo){								
-									$.getJSON('http://localhost:8080/comenius/js/ufcidades/'+sigla+'.json', function(data) {
+								function comboCidade(sigla, campo){	
+									//var n = str1.localeCompare(str2);
+									var x = sigla.localeCompare('df');
+									if (x == 0){
+										function(data){
+											document.getElementById("demo").innerHTML=data.name;
+										
+										output+="<option>" + data.name;						        	
+						        		output+="</select>";
+						        		document.getElementById(campo).innerHTML=output;
+										}
+									}
+									else
+										
+									$.getJSON('http://localhost:8080/comenius/js/ufcidades/'+sigla+'.json', function(data) { 
 							  			var output="<select>";
-							        	for (var i in data.geonames) {
+							        	for (var i in data.geonames) {							        		
 							        		//pega o nome de todas as cidades 
-							        	    output+="<option>" + data.geonames[i].name;						        	    
+							        	    output+="<option>" + data.geonames[i].name;	
 							        	}
-							        	output+="</select>";			
+							        	output+="</select>";
+							        	
 							        	//popula o select de acordo com a referência passada: campo
 							        	document.getElementById(campo).innerHTML=output;	
 							        	//campo: nome do campo - select. relacionado ao campos uf que foi
