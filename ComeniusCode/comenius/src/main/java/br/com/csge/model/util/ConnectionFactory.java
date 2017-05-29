@@ -1,4 +1,4 @@
-package br.com.csge.util;
+package br.com.csge.model.util;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

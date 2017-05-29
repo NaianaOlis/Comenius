@@ -3,15 +3,15 @@ package br.com.csge.model;
 import java.io.Serializable;
 
 public class Endereco  implements Serializable{  
-	  
-	   private Integer id; 
-	   private String logradouro;
-	   private int num;
-	   private String bairro;
-	   private String complemento;
-	   private int cep;
-	   private String cidade;
-	   private String uf;
+	
+	private Integer id; 
+	private String logradouro;
+	private int num;
+	private String bairro;
+	private String complemento;
+	private int cep;
+	private Integer cidade;
+	private String uf;
 	   
 	public Endereco() {
 		
@@ -52,10 +52,11 @@ public class Endereco  implements Serializable{
 	public void setCep(int cep) {
 		this.cep = cep;
 	}
-	public String getCidade() {
+	
+	public Integer getCidade() {
 		return cidade;
 	}
-	public void setCidade(String cidade) {
+	public void setCidade(Integer cidade) {
 		this.cidade = cidade;
 	}
 	public String getUf() {

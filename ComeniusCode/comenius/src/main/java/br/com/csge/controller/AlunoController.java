@@ -1,8 +1,6 @@
 package br.com.csge.controller;
 
 import java.io.IOException;
-import java.util.List;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,14 +8,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.csge.dao.UsuarioDao;
+import br.com.csge.model.dao.UsuarioDao;
 import br.com.csge.model.Aluno;
-import br.com.csge.model.Usuario;
-import br.com.csge.util.ConnectionFactory;
 
 
 @WebServlet("/AlunoCtrl")
 public class AlunoController extends HttpServlet {	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	String acao = null;
    
 	public AlunoController() {    	
@@ -56,3 +56,16 @@ public class AlunoController extends HttpServlet {
 	}
 	
 }
+
+
+/*
+
+String em data 
+String formato, final String data
+SimpleDateFormat(formato).parse(data);
+
+Data em String
+String formato, final Date data
+SimpleDateFormat(formato).format(data);
+* */
+

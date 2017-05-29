@@ -2,22 +2,26 @@ package br.com.csge.model;
 
 public class Responsavel extends Usuario{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	
-	
+	private String empresa;
+	private String profissao;
+	private Integer grauInstrucao;
+	public String getEmpresa() {
+		return empresa;
+	}
+	public void setEmpresa(String empresa) {
+		this.empresa = empresa;
+	}
+	public String getProfissao() {
+		return profissao;
+	}
+	public void setProfissao(String profissao) {
+		this.profissao = profissao;
+	}
+	public Integer getGrauInstrucao() {
+		return grauInstrucao;
+	}
+	public void setGrauInstrucao(Integer grauInstrucao) {
+		this.grauInstrucao = grauInstrucao;
+	}	
 
 }
-/*
- 
- String em data 
- String formato, final String data
- SimpleDateFormat(formato).parse(data);
- 
- Data em String
- String formato, final Date data
- SimpleDateFormat(formato).format(data);
- * */
- 

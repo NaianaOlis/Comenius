@@ -4,225 +4,125 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Usuario implements Serializable{  
-  
-   private Integer id; 
-   private Endereco endereco;
-   private String nome;  
-   private String email; 
-   private Date dataNac;
-   private String rg;
-   private String rgEmissor;
-   private String ufRg;
-   private Date dataEmissaoRg;
-   private String senha;
-   private Integer cpf;
-   private Integer genero;
-   private String estadoCivil;
-   
-   
-   
-   
+	
+	private Integer id; 
+	private Endereco endereco;
+	private Documentos doc; 
+	private String nome;  
+	private String email; 
+	private Date dataNasc;
+	private String senha;
+	private Integer cpf;
+	private Integer genero;
+	private String estadoCivil;
+	private String nacionalidade;
+	private String naturalidade;
+	private Integer tipo;
 
     public Usuario() {
     
     }
 
-
-
-
 	public Integer getId() {
 		return id;
 	}
-
-
-
 
 	public void setId(Integer id) {
 		this.id = id;
 	}
 
-
-
-
 	public Endereco getEndereco() {
 		return endereco;
 	}
-
-
-
 
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
 
-
-
-
 	public String getNome() {
 		return nome;
 	}
-
-
-
 
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-
-
-
 	public String getEmail() {
 		return email;
 	}
-
-
-
 
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
-
-
-
-	public Date getDataNac() {
-		return dataNac;
+	public Date getDataNasc() {
+		return dataNasc;
 	}
 
-
-
-
-	public void setDataNac(Date dataNac) {
-		this.dataNac = dataNac;
+	public void setDataNasc(Date dataNasc) {
+		this.dataNasc = dataNasc;
 	}
-
-
-
-
-	public String getRg() {
-		return rg;
-	}
-
-
-
-
-	public void setRg(String rg) {
-		this.rg = rg;
-	}
-
-
-
-
-	public String getRgEmissor() {
-		return rgEmissor;
-	}
-
-
-
-
-	public void setRgEmissor(String rgEmissor) {
-		this.rgEmissor = rgEmissor;
-	}
-
-
-
-
-	public String getUfrg() {
-		return ufRg;
-	}
-
-
-
-
-	public void setUfrg(String ufrg) {
-		this.ufRg = ufrg;
-	}
-
-
-
 
 	public String getSenha() {
 		return senha;
 	}
 
-
-
-
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-
-
-
 
 	public Integer getCpf() {
 		return cpf;
 	}
 
-
-
-
 	public void setCpf(Integer cpf) {
 		this.cpf = cpf;
 	}
-
-
-
 
 	public Integer getGenero() {
 		return genero;
 	}
 
-
-
-
 	public void setGenero(Integer genero) {
 		this.genero = genero;
 	}
-
-
-
 
 	public String getEstadoCivil() {
 		return estadoCivil;
 	}
 
-
-
-
 	public void setEstadoCivil(String estadoCivil) {
 		this.estadoCivil = estadoCivil;
 	}
 
-
-
-
-	public Date getDataEmissaoRg() {
-		return dataEmissaoRg;
+	
+	public String getNacionalidade() {
+		return nacionalidade;
 	}
-
-
-
-
-	public void setDataEmissaoRg(Date dataEmissaoRg) {
-		this.dataEmissaoRg = dataEmissaoRg;
-	}
-
-
-
-
-	@Override
-	public String toString() {
-		return "Usuario [id=" + id + ", endereco=" + endereco + ", nome=" + nome + ", email=" + email + ", dataNac="
-				+ dataNac + ", rg=" + rg + ", rgEmissor=" + rgEmissor + ", ufrg=" + ufRg + ", senha=" + senha + ", cpf="
-				+ cpf + ", genero=" + genero + ", estadoCivil=" + estadoCivil + "]";
-	}
-
-
 
 	
-  
-  
-   
+	public void setNacionalidade(String nacionalidade) {
+		this.nacionalidade = nacionalidade;
+	}
+
+	
+	public String getNaturalidade() {
+		return naturalidade;
+	}
+
+	
+	public void setNaturalidade(String naturalidade) {
+		this.naturalidade = naturalidade;
+	}
+
+		
+	public Integer getTipo() {
+		return tipo;
+	}
+
+	
+	public void setTipo(Integer tipo) {
+		this.tipo = tipo;
+	}
+
 }  
