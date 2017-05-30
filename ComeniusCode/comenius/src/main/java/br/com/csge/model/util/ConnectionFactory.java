@@ -13,19 +13,22 @@ public class ConnectionFactory {
     private static Connection conexao = null;
 
     public static Connection getConnection() {
-        if (conexao != null)
+    	if (conexao != null)
             return conexao;
         else {
             try {
-                Properties prop = new Properties();
-                InputStream inputStream = ConnectionFactory.class.getClassLoader().getResourceAsStream("/db.properties");
+                Properties prop = new Properties();            
+                InputStream inputStream = ConnectionFactory.class.getClassLoader().getResourceAsStream("/br/com/csge/model/util/db.properties");
                 prop.load(inputStream);
-                String driver = prop.getProperty("driver");
+                
+                String driver = prop.getProperty("driver");         
                 String url = prop.getProperty("url");
                 String user = prop.getProperty("user");
                 String pass = prop.getProperty("senha");
+                
                 Class.forName(driver);
                 conexao = DriverManager.getConnection(url, user, pass);
+                
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             } catch (SQLException e) {
@@ -36,6 +39,7 @@ public class ConnectionFactory {
                 e.printStackTrace();
             }
             return conexao;
+           
         }
 
     }

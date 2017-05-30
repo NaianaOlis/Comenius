@@ -27,6 +27,7 @@ public class UsuarioDao {
 					u.setNome(rs.getString("nome"));
 					u.setEmail(rs.getString("email"));
 					u.setSenha(rs.getString("senha"));
+					u.setTipo(rs.getInt("tipo"));
 				
 					return u;		
 				}

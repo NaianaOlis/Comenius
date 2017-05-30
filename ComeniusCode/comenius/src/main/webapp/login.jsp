@@ -15,11 +15,9 @@
 <body>
 	<div class="fluid-container">
 		<div class="login-container login">
-			<div>
-				<jsp:include page = "cabecalho.jsp" />
-			</div>
+			<div><jsp:include page = "cabecalho.jsp" /></div>
             <div class="row">
-            	<form class="form-login" action="login" method="POST">
+            	<form class="form-login" action="UserCtrl" method="POST">
             		<div class="col-md-4"></div>
   					<div class="col-md-4">  
                 		<span id="email" class="email"></span>
